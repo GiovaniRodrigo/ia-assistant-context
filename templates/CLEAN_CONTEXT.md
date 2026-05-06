@@ -4,49 +4,49 @@
 
 **Domínio:** [DESCREVA_O_DOMINIO_DO_NEGOCIO]
 
-**Objetivo:** [DESCREVA_O_OBJETIVO_PRINCIPAL_DO_PROJETO]
+**Objetivo:** [DESCREVA_O_OBJETIVO_PRINCIPAL_DO_PROJETO_E_RESULTADO_ESPERADO]
 
-**Stack atual:** [LISTE_A_STACK_TECNOLOGICA]
+**Stack atual:** [LISTE_A_STACK_TECNOLOGICA_LINGUAGENS_FRAMEWORKS_BANCOS]
 
 ## 2. Entidades de Negócio Core
 
-### [ENTIDADE_1]
+### [NOME_DA_ENTIDADE_1]
 
-- [ATRIBUTO_1]
-- [ATRIBUTO_2]
-- [ATRIBUTO_N]
+- [ATRIBUTO_1]: [DESCRICAO_CURTA]
+- [ATRIBUTO_2]: [DESCRICAO_CURTA]
+- [ATRIBUTO_N]: [DESCRICAO_CURTA]
 
-### [ENTIDADE_2]
+### [NOME_DA_ENTIDADE_2]
 
-- [ATRIBUTO_1]
-- [ATRIBUTO_2]
-- [ATRIBUTO_N]
+- [ATRIBUTO_1]: [DESCRICAO_CURTA]
+- [ATRIBUTO_2]: [DESCRICAO_CURTA]
+- [ATRIBUTO_N]: [DESCRICAO_CURTA]
 
 ## 3. Regras de Negócio Inegociáveis
 
 | ID | Regra | Restrição |
 | --- | --- | --- |
-| RN01 | [NOME_DA_REGRA] | [DESCRICAO_DA_RESTRICAO] |
-| RN02 | [NOME_DA_REGRA] | [DESCRICAO_DA_RESTRICAO] |
+| RN01 | [NOME_DA_REGRA] | [DESCRICAO_DA_RESTRICAO_OU_COMPORTAMENTO_OBRIGATORIO] |
+| RN02 | [NOME_DA_REGRA] | [DESCRICAO_DA_RESTRICAO_OU_COMPORTAMENTO_OBRIGATORIO] |
 
 ## 4. Padrões de Implementação
 
-**Arquitetura alvo:** [DESCREVA_A_ARQUITETURA_OU_PADRAO_DE_DESIGN]
+**Arquitetura alvo:** [DESCREVA_O_PADRAO_ARQUITETURAL_EX_HEXAGONAL_MVC_CLEAN_ARCH]
 
 Camadas principais:
 
-- `[DIRETORIO_1]/`: [DESCRICAO_DA_RESPONSABILIDADE]
-- `[DIRETORIO_2]/`: [DESCRICAO_DA_RESPONSABILIDADE]
+- `[DIRETORIO_1]/`: [RESPONSABILIDADE_DA_CAMADA]
+- `[DIRETORIO_2]/`: [RESPONSABILIDADE_DA_CAMADA]
+- `[DIRETORIO_N]/`: [RESPONSABILIDADE_DA_CAMADA]
 
-**Estilo de código:** [DESCREVA_O_ESTILO_DE_CODIGO_E_PRATICAS_DE_TESTE]
+**Estilo de código:** [DIRETRIZES_DE_CODIFICACAO_TESTES_E_PADROES_DE_NOMECLATURA]
 
-**Documentação:** novas funcionalidades devem sincronizar regras de negócio, plano de implementação, testes e fontes afetadas.
+**Documentação:** novas funcionalidades devem sincronizar regras de negócio, plano de implementação e testes.
 
 ## 5. Mapeamento de Arquivos Atuais
 
-- `[CAMINHO_ARQUIVO_1]`: [DESCRICAO_DO_CONTEUDO]
-- `[CAMINHO_ARQUIVO_2]`: [DESCRICAO_DO_CONTEUDO]
-- `docs/IA/IMPLEMENTATION_PLAN.md`: plano detalhado de implementação.
-- `docs/IA/RAG_IMPLEMENTATION.md`: fluxo RAG obrigatório para IA.
-- `docs/IA/AI_FEATURE_WORKFLOW.md`: fluxo de regra, testes, aprovação e implementação.
+- `[CAMINHO_DO_ARQUIVO_DE_CONFIGURACAO]`: Configurações globais.
+- `docs/IA/IMPLEMENTATION_PLAN.md`: Plano detalhado de implementação.
+- `docs/IA/RAG_IMPLEMENTATION.md`: Fluxo de recuperação de contexto para IA.
+- `docs/IA/AI_FEATURE_WORKFLOW.md`: Fluxo de trabalho (Regra -> Teste -> Código).
 - `docs/IA/CLEAN_CONTEXT.md`: Este arquivo.

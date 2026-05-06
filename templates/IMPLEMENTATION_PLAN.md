@@ -1,73 +1,72 @@
 # Plano de Implementação: [NOME_DO_PROJETO]
 
-Este plano organiza a evolução do projeto **[NOME_DO_PROJETO]**.
+Este plano organiza a evolução técnica e funcional do projeto **[NOME_DO_PROJETO]**.
 
 ## Objetivo
 
-[DESCREVA_O_OBJETIVO_DA_PROXIMA_FASE_OU_DO_PROJETO_COMO_UM_TODO]
+[DESCREVA_O_OBJETIVO_DA_FASE_ATUAL_DO_PROJETO]
 
 O usuário deve conseguir:
 
-* [FUNCIONALIDADE_1];
-* [FUNCIONALIDADE_2];
-* [FUNCIONALIDADE_N].
+* [OBJETIVO_DO_USUARIO_1];
+* [OBJETIVO_DO_USUARIO_2];
+* [OBJETIVO_DO_USUARIO_N].
 
 ## Estado atual
 
-O projeto conta atualmente com:
+O projeto conta atualmente com os seguintes componentes estáveis:
 
-* [RECURSO_JA_IMPLEMENTADO_1];
-* [RECURSO_JA_IMPLEMENTADO_2];
-* [RECURSO_JA_IMPLEMENTADO_N].
+* [RECURSO_IMPLEMENTADO_1];
+* [RECURSO_IMPLEMENTADO_2];
+* [RECURSO_IMPLEMENTADO_N].
 
-## Fluxo IA/RAG para novas funcionalidades
+## Fluxo IA para novas funcionalidades
 
-Antes de implementar qualquer item novo do roadmap, a IA deve seguir as diretrizes de contexto:
+Para qualquer evolução, a IA deve seguir rigorosamente os documentos de contexto:
 
-1. consultar `docs/IA/CLEAN_CONTEXT.md`;
-2. localizar ou propor a regra de negócio em `docs/BUSINESS_RULES.md/` (ou diretório equivalente);
-3. apresentar plano e aguardar `[APROVADO]`;
-4. criar ou atualizar testes;
-5. aguardar aprovação da etapa de testes quando a mudança alterar comportamento;
-6. implementar no menor escopo possível;
-7. sincronizar documentação afetada.
+1. Consultar `docs/IA/CLEAN_CONTEXT.md`.
+2. Propor/Localizar regra de negócio no diretório de regras (**[DIRETORIO_DE_REGRAS]**).
+3. Apresentar o plano técnico e aguardar tag `[APROVADO]`.
+4. Criar ou atualizar os testes correspondentes.
+5. Implementar a lógica no menor escopo possível após aprovação dos testes.
+6. Sincronizar a documentação afetada.
 
-## Princípios
+## Princípios de Desenvolvimento
 
-* [PRINCIPIO_1];
-* [PRINCIPIO_2];
+* [PRINCIPIO_1_EX_QUALIDADE_SOBRE_VELOCIDADE];
+* [PRINCIPIO_2_EX_SIMPLICIDADE_NA_ARQUITETURA];
 * [PRINCIPIO_N].
 
-## Arquitetura alvo
+## Arquitetura Alvo
 
 ```text
-[DIAGRAMA_OU_DESCRICAO_DA_ARQUITETURA]
+[REPRESENTACAO_VISUAL_OU_TEXTUAL_DA_ESTRUTURA_DO_SISTEMA]
 ```
 
-### Módulos previstos
+### Módulos e Componentes
 
-* `[CAMINHO_MODULO_1]`: [RESPONSABILIDADE].
-* `[CAMINHO_MODULO_2]`: [RESPONSABILIDADE].
+* `[CAMINHO_DO_COMPONENTE_1]`: [RESPONSABILIDADE].
+* `[CAMINHO_DO_COMPONENTE_2]`: [RESPONSABILIDADE].
 
-## Modelo de dados
+## Modelo de Dados / Contratos
 
-Campos recomendados para as entidades principais:
+Campos e estruturas principais:
 
-### [NOME_DA_ENTIDADE]
+### [ENTIDADE_OU_CONTRATO]
 
-* `campo_1`: [DESCRICAO].
-* `campo_2`: [DESCRICAO].
+* `campo_1`: [DESCRICAO_E_TIPO].
+* `campo_2`: [DESCRICAO_E_TIPO].
 
-## Fases de implementação
+## Fases de Implementação
 
-### Mapa do roadmap
+### Roadmap de Evolução
 
-| Roadmap | Funcionalidades | Fases técnicas |
+| Roadmap | Funcionalidades | Status/Fase Técnica |
 | --- | --- | --- |
-| Fase 1 | [RESUMO_FUNCIONALIDADES] | [FASE_TECNICA] |
-| Fase 2 | [RESUMO_FUNCIONALIDADES] | [FASE_TECNICA] |
+| Fase 1 | [FUNCIONALIDADES_FASE_1] | [ESTADO_ATUAL] |
+| Fase 2 | [FUNCIONALIDADES_FASE_2] | [PLANEJADO] |
 
-### Fase 1 - [NOME_DA_FASE]
+### Fase [X] - [NOME_DA_FASE]
 
 Entregáveis:
 
@@ -76,17 +75,16 @@ Entregáveis:
 
 Critérios de aceite:
 
-* [CRITERIO_1];
-* [CRITERIO_2].
+* [CRITERIO_DE_VALIDACAO_1];
+* [CRITERIO_DE_VALIDACAO_2].
 
-## Testes
+## Estratégia de Testes
 
-Cobertura mínima por etapa:
+Cobertura obrigatória:
 
-* [AREA_DE_TESTE_1];
-* [AREA_DE_TESTE_2].
+* [TIPO_DE_TESTE_1_EX_UNITARIO];
+* [TIPO_DE_TESTE_2_EX_INTEGRACAO].
 
-## Riscos
+## Riscos e Mitigações
 
-* [RISCO_1];
-* [RISCO_2].
+* [RISCO_CONHECIDO]: [PLANO_DE_MITIGACAO].

@@ -7,7 +7,7 @@ Este documento define o processo obrigatório para uma IA implementar novas func
 A IA deve seguir esta ordem:
 
 1. Definir ou localizar a regra de negócio.
-2. Criar ou atualizar os testes com base em **[CAMINHO_DOCUMENTACAO_TESTES]**.
+2. Criar ou atualizar os testes com base em **[DOCUMENTO_DE_REFERENCIA_DE_TESTES]**.
 3. Implementar a funcionalidade.
 
 Se a regra de negócio não existir e não puder ser inferida com segurança, a IA deve interromper o trabalho com erro claro e pedir definição ao usuário antes de criar testes ou alterar código.
@@ -25,9 +25,9 @@ Antes de qualquer alteração técnica, a IA deve identificar:
 
 A IA deve procurar a regra em:
 
-- documentação existente em **[DIRETORIO_DOCS]**;
-- testes existentes em **[DIRETORIO_TESTS]**;
-- código relacionado em **[DIRETORIOS_CODIGO_FONTE]**;
+- documentação existente em **[DIRETORIO_DE_DOCUMENTACAO]**;
+- testes existentes em **[DIRETORIO_DE_TESTES]**;
+- código relacionado em **[DIRETORIOS_DE_CODIGO]**;
 - mensagens explícitas do usuário.
 
 Se a regra estiver ausente, ambígua ou contraditória, interrompa com erro:
@@ -53,13 +53,13 @@ A IA só deve avançar após aprovação explícita do usuário.
 
 Com a regra de negócio aprovada, a IA deve criar ou atualizar testes antes da implementação.
 
-Use **[CAMINHO_DOCUMENTACAO_TESTES]** como referência obrigatória.
+Use **[DOCUMENTO_DE_REFERENCIA_DE_TESTES]** como referência obrigatória.
 
-Para regras que possam ser descritas como entradas e saídas esperadas, prefira gerar testes automatizados usando as ferramentas do projeto (**[EXEMPLO_FERRAMENTA_TESTE]**).
+Para regras que possam ser descritas como entradas e saídas esperadas, prefira utilizar as ferramentas de automação de testes do projeto (**[FERRAMENTA_DE_TESTE]**).
 
 Os testes devem cobrir:
 
-- caso feliz;
+- caso feliz (sucesso);
 - entradas inválidas;
 - limites relevantes;
 - fallback ou erro esperado, quando houver;
@@ -82,7 +82,7 @@ Somente depois dos testes aprovados, a IA deve alterar o código da funcionalida
 
 A implementação deve:
 
-- seguir os padrões existentes do projeto;
+- seguir os padrões de arquitetura definidos para o projeto;
 - manter a alteração no menor escopo possível;
 - evitar refatorações não solicitadas;
 - preservar compatibilidade com a versão atual;
@@ -93,7 +93,7 @@ A implementação deve:
 Antes de editar código de produção, a IA deve mostrar ao usuário:
 
 - plano de alteração por arquivo;
-- funções, classes ou módulos que serão alterados;
+- funções, métodos, classes ou módulos que serão alterados;
 - comportamento esperado depois da mudança;
 - impacto nos testes existentes;
 - comandos de verificação planejados.
@@ -107,7 +107,7 @@ Após implementar, a IA deve executar os testes aplicáveis.
 Comando padrão:
 
 ```bash
-[COMANDO_EXECUCAO_TESTES]
+[COMANDO_PARA_EXECUTAR_TESTES]
 ```
 
 ## Resultado esperado da IA
