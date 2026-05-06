@@ -43,9 +43,12 @@ Camadas principais:
 
 **Documentação:** novas funcionalidades devem sincronizar regras de negócio, plano de implementação e testes.
 
+**Uso de IA:** siga `docs/IA/AI_DEVELOPMENT_PRINCIPLES.md`; IA acelera execução, mas arquitetura, testes, debugging, validação e produção continuam exigindo julgamento de engenharia.
+
 ## 5. Mapeamento de Arquivos Atuais
 
 - `[CAMINHO_DO_ARQUIVO_DE_CONFIGURACAO]`: Configurações globais.
+- `docs/IA/AI_DEVELOPMENT_PRINCIPLES.md`: Princípios de uso responsável e produtivo de IA.
 - `docs/IA/IMPLEMENTATION_PLAN.md`: Plano detalhado de implementação.
 - `docs/IA/RAG_IMPLEMENTATION.md`: Fluxo de recuperação de contexto para IA.
 - `docs/IA/AI_FEATURE_WORKFLOW.md`: Fluxo de trabalho (Regra -> Teste -> Código).

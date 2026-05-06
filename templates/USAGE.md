@@ -15,6 +15,8 @@ Para começar um novo projeto usando este modelo:
     - Demais arquivos de `templates/` -> `docs/IA/`.
 3.  **Preencha os Placeholders:**
     Abra cada arquivo `.md` e substitua os termos entre colchetes (ex: `[NOME_DO_PROJETO]`, `[STACK_ATUAL]`) pelas informações reais do seu sistema.
+4.  **Revise os Princípios de IA:**
+    Ajuste `docs/IA/AI_DEVELOPMENT_PRINCIPLES.md` para refletir como sua equipe quer usar IA sem abrir mão de arquitetura, testes, debugging, deploy e validação humana.
 
 ## 2. O Ciclo de Desenvolvimento com IA
 
@@ -45,9 +47,11 @@ Ao interagir com a IA, você pode usar comandos diretos para gerenciar o context
 2.  **Documentação é Código:** Trate mudanças nos arquivos de `docs/IA/` com a mesma importância que mudanças no código-fonte.
 3.  **Contexto Limpo, Resposta Rápida:** Mantenha o `CLEAN_CONTEXT.md` conciso. Se ele ficar muito grande, mova detalhes técnicos para arquivos específicos e deixe apenas o resumo.
 4.  **Agnosticismo:** Mantenha os mandatos do `GEMINI.md` genéricos o suficiente para que, se você mudar de linguagem (ex: de Python para Go), o processo de trabalho continue o mesmo.
+5.  **IA Amplifica Engenharia:** Use IA para acelerar boilerplate, CRUDs, documentação, testes, refatorações, scripts e automações, mas valide tudo com revisão, testes e medição quando aplicável.
 
 ## 5. Manutenção de Longo Prazo
 
 À medida que o projeto cresce:
 - **Revise o Roadmap:** Atualize o `IMPLEMENTATION_PLAN.md` ao final de cada sprint ou marco importante.
 - **Pode Regras Obsoletas:** Remova regras de negócio em `docs/BUSINESS_RULES/` que não são mais válidas para evitar confusão no Agente de IA.
+- **Revise Produção:** Mantenha deploy, rollback, logs, métricas e alertas documentados para que a IA considere impactos operacionais antes de alterar fluxos críticos.
